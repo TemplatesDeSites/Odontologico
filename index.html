@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínica Odontológica - Sorriso Premium</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">
+        <span class="logo__icon">SP</span>
+        <span class="logo__text">Sorriso Premium</span>
+      </div>
+      <nav class="nav">
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#servicos" class="nav__link">Serviços</a>
+        <a href="#agendar" class="nav__link">Agendar</a>
+        <a href="#contato" class="nav__link">Contato</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero reveal" id="topo">
+    <div class="hero__overlay"></div>
+    <div class="hero__background"></div>
+    <div class="container hero__content">
+      <p class="hero__subtitle">Odontologia Estética • São Paulo</p>
+      <h1 class="hero__title">
+        Estilo, Saúde<br />
+        <span class="hero__title--highlight">e Sorrisos Perfeitos</span>
+      </h1>
+      <p class="hero__text">
+        A melhor experiência em cuidados odontológicos, aliando tecnologia de ponta,
+        ambiente acolhedor e uma equipe especializada para cuidar do seu sorriso.
+      </p>
+      <div class="hero__actions">
+        <a href="#agendar" class="btn btn--primary">Agendar Consulta</a>
+        <a href="#servicos" class="btn btn--secondary">Nossos Tratamentos</a>
+      </div>
+      <div class="hero__info">
+        <span>Atendimento humanizado</span>
+        <span>Clareamento • Implantes • Ortodontia</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="stats reveal">
+      <div class="container stats__inner">
+        <div class="stat">
+          <span class="stat__number" data-target="10">0+</span>
+          <span class="stat__label">Anos de experiência</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-target="5000">0+</span>
+          <span class="stat__label">Pacientes atendidos</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-target="12">0+</span>
+          <span class="stat__label">Especialistas</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-target="98" data-suffix="%">0%</span>
+          <span class="stat__label">Satisfação</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="sobre">
+      <div class="container section__grid">
+        <div class="section__text">
+        <h2>Sobre a <span class="section__title-highlight">Clínica</span></h2>
+          <p>
+            Na <strong>Sorriso Premium</strong>, unimos conforto, sofisticação e tecnologia para
+            oferecer uma experiência odontológica única. Nosso espaço foi pensado para que cada
+            paciente se sinta à vontade do início ao fim do atendimento.
+          </p>
+          <p>
+            Contamos com equipamentos modernos, protocolos rigorosos de biossegurança e uma equipe
+            comprometida em entregar resultados naturais e duradouros.
+          </p>
+        </div>
+        <div class="section__card">
+          <h3>Diferenciais</h3>
+          <ul>
+            <li>Atendimento personalizado e pontual</li>
+            <li>Ambiente moderno e climatizado</li>
+            <li>Equipamentos de última geração</li>
+            <li>Facilidade para agendar online</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt reveal" id="servicos">
+      <div class="container">
+        <h2 class="section__title">Nossos <span class="section__title-highlight">Serviços</span></h2>
+        <p class="section__subtitle">
+          Oferecemos uma variedade de tratamentos para cuidar da saúde e da estética do seu sorriso.
+        </p>
+        <div class="cards">
+          <article class="card" data-servico="Clareamento Dental">
+            <div class="card__icon">🦷</div>
+            <h3>Clareamento Dental</h3>
+            <p>Tratamento seguro para um sorriso mais branco, uniforme e iluminado.</p>
+            <div class="card__footer">
+              <button class="card__link" type="button">
+                <span>Saiba mais</span>
+                <span class="card__arrow">
+                  <svg viewBox="0 0 16 16" aria-hidden="true" class="card__arrow-icon">
+                    <path d="M4 8h7.5M8.5 4.5 11.5 8 8.5 11.5" fill="none" stroke="#00e0ff" stroke-width="1.4"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </article>
+          <article class="card" data-servico="Implantes">
+            <div class="card__icon">🧩</div>
+            <h3>Implantes</h3>
+            <p>Reposição de dentes com máximo conforto, estética natural e segurança.</p>
+            <div class="card__footer">
+              <button class="card__link" type="button">
+                <span>Saiba mais</span>
+                <span class="card__arrow">
+                  <svg viewBox="0 0 16 16" aria-hidden="true" class="card__arrow-icon">
+                    <path d="M4 8h7.5M8.5 4.5 11.5 8 8.5 11.5" fill="none" stroke="#00e0ff" stroke-width="1.4"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </article>
+          <article class="card" data-servico="Ortodontia">
+            <div class="card__icon">😬</div>
+            <h3>Ortodontia</h3>
+            <p>Aparelhos e alinhadores transparentes para alinhar o sorriso com discrição.</p>
+            <div class="card__footer">
+              <button class="card__link" type="button">
+                <span>Saiba mais</span>
+                <span class="card__arrow">
+                  <svg viewBox="0 0 16 16" aria-hidden="true" class="card__arrow-icon">
+                    <path d="M4 8h7.5M8.5 4.5 11.5 8 8.5 11.5" fill="none" stroke="#00e0ff" stroke-width="1.4"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </article>
+          <article class="card" data-servico="Odontopediatria">
+            <div class="card__icon">🧸</div>
+            <h3>Odontopediatria</h3>
+            <p>Cuidado delicado e lúdico para a saúde bucal dos pequenos.</p>
+            <div class="card__footer">
+              <button class="card__link" type="button">
+                <span>Saiba mais</span>
+                <span class="card__arrow">
+                  <svg viewBox="0 0 16 16" aria-hidden="true" class="card__arrow-icon">
+                    <path d="M4 8h7.5M8.5 4.5 11.5 8 8.5 11.5" fill="none" stroke="#00e0ff" stroke-width="1.4"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt reveal" id="resultados">
+      <div class="container">
+        <h2 class="section__title">Resultados e <span class="section__title-highlight">Sorrisos</span></h2>
+        <p class="section__subtitle">
+          Passe o mouse ou <strong>clique</strong> nas imagens para ver o <strong>antes e depois</strong>. Imagens meramente ilustrativas.
+        </p>
+        <div class="gallery">
+          <figure class="gallery__item">
+            <div class="gallery__photo">
+              <div class="gallery__photo-layer gallery__photo-layer--before gallery__photo--1-before"></div>
+              <div class="gallery__photo-layer gallery__photo-layer--after gallery__photo--1-after"></div>
+            </div>
+            <figcaption class="gallery__caption">Clareamento Dental</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__photo">
+              <div class="gallery__photo-layer gallery__photo-layer--before gallery__photo--2-before"></div>
+              <div class="gallery__photo-layer gallery__photo-layer--after gallery__photo--2-after"></div>
+            </div>
+            <figcaption class="gallery__caption">Implantes</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__photo">
+              <div class="gallery__photo-layer gallery__photo-layer--before gallery__photo--3-before"></div>
+              <div class="gallery__photo-layer gallery__photo-layer--after gallery__photo--3-after"></div>
+            </div>
+            <figcaption class="gallery__caption">Alinhamento Ortodôntico</figcaption>
+          </figure>
+          <figure class="gallery__item">
+            <div class="gallery__photo">
+              <div class="gallery__photo-layer gallery__photo-layer--before gallery__photo--4-before"></div>
+              <div class="gallery__photo-layer gallery__photo-layer--after gallery__photo--4-after"></div>
+            </div>
+            <figcaption class="gallery__caption">Sorriso Infantil</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--agendar reveal" id="agendar">
+      <div class="container">
+        <div class="section__text section__text--centered">
+          <h2>Agende seu <span class="section__title-highlight">Horário</span></h2>
+          <p>
+            Preencha o formulário abaixo e entraremos em contato para confirmar seu atendimento.
+          </p>
+        </div>
+        <form class="form" id="agendarForm">
+          <div class="form__group">
+            <label for="nome">
+              <span class="form__label-icon">👤</span>
+              <span>Nome Completo *</span>
+            </label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label for="email">
+                <span class="form__label-icon">✉️</span>
+                <span>E-mail</span>
+              </label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" />
+            </div>
+            <div class="form__group">
+              <label for="telefone">
+                <span class="form__label-icon">📞</span>
+                <span>Telefone / WhatsApp *</span>
+              </label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required />
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label for="servico">
+              <span class="form__label-icon">✅</span>
+              <span>Serviço Desejado *</span>
+            </label>
+            <select id="servico" name="servico" required>
+              <option value="">Selecione um serviço</option>
+              <option value="clareamento">Clareamento</option>
+              <option value="implantes">Implantes</option>
+              <option value="ortodontia">Ortodontia</option>
+              <option value="limpeza">Limpeza</option>
+              <option value="avaliacao">Avaliação</option>
+            </select>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label for="data">
+                <span class="form__label-icon">📅</span>
+                <span>Data Preferencial *</span>
+              </label>
+              <input type="date" id="data" name="data" required />
+            </div>
+            <div class="form__group">
+              <label for="horario">
+                <span class="form__label-icon">⏰</span>
+                <span>Horário *</span>
+              </label>
+              <select id="horario" name="horario" required>
+                <option value="">Selecione um horário</option>
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Confirmar Agendamento</button>
+          <p class="form__feedback" id="formFeedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+    <section class="section section--contato reveal" id="contato">
+      <div class="container">
+        <header class="contact-header">
+          <h2>Entre em <span class="section__title-highlight">Contato</span></h2>
+          <p>Estamos prontos para atender você. Visite nossa clínica ou fale com a nossa equipe.</p>
+        </header>
+
+        <div class="contact-grid contact-grid--top">
+          <article class="contact-card">
+            <div class="contact-card__icon">📱</div>
+            <h3>Siga-nos nas <span class="section__title-highlight">Redes Sociais</span></h3>
+            <p>Acompanhe novidades, dicas de cuidado bucal e promoções especiais.</p>
+            <div class="contact-social__icons">
+              <a href="#" class="social social--instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social social--whatsapp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="#" class="social social--facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+          </article>
+          <article class="contact-card">
+            <div class="contact-card__icon">📞</div>
+            <h3>Telefone</h3>
+            <p>(11) 99999-9999<br />(11) 3333-4444</p>
+          </article>
+          <article class="contact-card">
+            <div class="contact-card__icon">✉️</div>
+            <h3>E-mail</h3>
+            <p>contato@sorrisopremium.com.br<br />agendamento@sorrisopremium.com.br</p>
+          </article>
+          <article class="contact-card">
+            <div class="contact-card__icon">⏰</div>
+            <h3>Horário</h3>
+            <p>Segunda a Sexta: 8h às 19h<br />Sábado: 8h às 13h</p>
+          </article>
+        </div>
+
+        <div class="contact-grid contact-grid--bottom">
+          <article class="contact-card contact-card--highlight">
+            <div class="contact-card__icon">📍</div>
+            <h3>Visite Nossa Clínica</h3>
+            <p>Rua Exemplo, 123 - Centro<br />São Paulo - SP</p>
+            <div class="contact-card__map">
+              <iframe
+                title="Mapa da clínica"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.850557143877!2d-46.65598168445828!3d-23.57556978467615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCszQ1JzMyLjEiUyA0NsKwMzknMTYuMCJX!5e0!3m2!1spt-BR!2sBR!4v1700000000000"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--brand">
+        <div class="logo">
+          <span class="logo__icon">SP</span>
+          <span class="logo__text">Sorriso Premium</span>
+        </div>
+        <p class="footer__text">
+          Clínica odontológica em São Paulo especializada em estética dental, implantes e tratamento humanizado
+          para toda a família.
+        </p>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Mapa do site</h4>
+        <nav class="footer__nav">
+          <a href="#sobre">Sobre nós</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#agendar">Agendar</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__title">Contato</h4>
+        <p class="footer__text">
+          Rua Exemplo, 123<br />
+          Centro • São Paulo - SP
+        </p>
+        <p class="footer__text">
+          WhatsApp: (11) 99999-9999<br />
+          E-mail: contato@sorrisopremium.com.br
+        </p>
+        <p class="footer__text">
+          Segunda a Sexta: 8h às 19h<br />
+          Sábado: 8h às 13h
+        </p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> Sorriso Premium Clínica Odontológica. Todos os direitos reservados.</span>
+      <a href="#topo" class="footer__link">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
