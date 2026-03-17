@@ -49,6 +49,60 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  const mobileTrack = document.querySelector(".testimonials-mobile__track");
+  const mobileCards = mobileTrack ? mobileTrack.querySelectorAll(".testimonial-card") : [];
+  const mobilePrev = document.querySelector(".testimonial-nav--prev");
+  const mobileNext = document.querySelector(".testimonial-nav--next");
+  const mobileDots = document.querySelectorAll(".testimonial-dots:not(.testimonial-dots--desktop) .testimonial-dot");
+
+  if (mobileTrack && mobileCards.length > 0 && mobilePrev && mobileNext && mobileDots.length === mobileCards.length) {
+    let currentMobile = 0;
+
+    const updateMobile = () => {
+      mobileTrack.style.transform = `translateX(-${currentMobile * 100}%)`;
+      mobileDots.forEach((dot, index) => {
+        dot.classList.toggle("testimonial-dot--active", index === currentMobile);
+      });
+    };
+
+    mobilePrev.addEventListener("click", () => {
+      currentMobile = (currentMobile - 1 + mobileCards.length) % mobileCards.length;
+      updateMobile();
+    });
+
+    mobileNext.addEventListener("click", () => {
+      currentMobile = (currentMobile + 1) % mobileCards.length;
+      updateMobile();
+    });
+  }
+
+  const desktopTrack = document.querySelector(".testimonials-desktop__track");
+  const desktopSlides = desktopTrack ? desktopTrack.querySelectorAll(".testimonial-slide") : [];
+  const desktopPrev = document.querySelector(".testimonial-nav--desktop-prev");
+  const desktopNext = document.querySelector(".testimonial-nav--desktop-next");
+  const desktopDots = document.querySelectorAll(".testimonial-dots--desktop .testimonial-dot--desktop");
+
+  if (desktopTrack && desktopSlides.length > 0 && desktopPrev && desktopNext && desktopDots.length === desktopSlides.length) {
+    let currentDesktop = 0;
+
+    const updateDesktop = () => {
+      desktopTrack.style.transform = `translateX(-${currentDesktop * 100}%)`;
+      desktopDots.forEach((dot, index) => {
+        dot.classList.toggle("testimonial-dot--desktop-active", index === currentDesktop);
+      });
+    };
+
+    desktopPrev.addEventListener("click", () => {
+      currentDesktop = (currentDesktop - 1 + desktopSlides.length) % desktopSlides.length;
+      updateDesktop();
+    });
+
+    desktopNext.addEventListener("click", () => {
+      currentDesktop = (currentDesktop + 1) % desktopSlides.length;
+      updateDesktop();
+    });
+  }
+
   const serviceButtons = document.querySelectorAll(".card__link");
   const whatsappNumber = "5511999999999"; // coloque aqui o número real com DDD
 
