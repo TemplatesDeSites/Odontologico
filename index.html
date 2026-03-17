@@ -559,66 +559,35 @@
           <div class="form__group">
             <label for="nome">
               <span class="form__label-icon">👤</span>
-              <span>Nome Completo *</span>
+              <span>Nome completo *</span>
             </label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
           </div>
 
-          <div class="form__row">
-            <div class="form__group">
-              <label for="email">
-                <span class="form__label-icon">✉️</span>
-                <span>E-mail</span>
-              </label>
-              <input type="email" id="email" name="email" placeholder="seu@email.com" />
-            </div>
-            <div class="form__group">
-              <label for="telefone">
-                <span class="form__label-icon">📞</span>
-                <span>Telefone / WhatsApp *</span>
-              </label>
-              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required />
-            </div>
+          <div class="form__group">
+            <label for="telefone">
+              <span class="form__label-icon">📞</span>
+              <span>Telefone / WhatsApp *</span>
+            </label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required />
           </div>
 
           <div class="form__group">
             <label for="servico">
               <span class="form__label-icon">✅</span>
-              <span>Serviço Desejado *</span>
+              <span>O que você precisa hoje? *</span>
             </label>
             <select id="servico" name="servico" required>
-              <option value="">Selecione um serviço</option>
-              <option value="clareamento">Clareamento</option>
+              <option value="">Selecione uma opção</option>
+              <option value="clareamento">Clareamento dental</option>
               <option value="implantes">Implantes</option>
-              <option value="ortodontia">Ortodontia</option>
-              <option value="limpeza">Limpeza</option>
-              <option value="avaliacao">Avaliação</option>
+              <option value="ortodontia">Ortodontia / aparelho</option>
+              <option value="limpeza">Limpeza e prevenção</option>
+              <option value="avaliacao">Apenas uma avaliação</option>
             </select>
           </div>
 
-          <div class="form__row">
-            <div class="form__group">
-              <label for="data">
-                <span class="form__label-icon">📅</span>
-                <span>Data Preferencial *</span>
-              </label>
-              <input type="date" id="data" name="data" required />
-            </div>
-            <div class="form__group">
-              <label for="horario">
-                <span class="form__label-icon">⏰</span>
-                <span>Horário *</span>
-              </label>
-              <select id="horario" name="horario" required>
-                <option value="">Selecione um horário</option>
-                <option value="manha">Manhã</option>
-                <option value="tarde">Tarde</option>
-                <option value="noite">Noite</option>
-              </select>
-            </div>
-          </div>
-
-          <button type="submit" class="btn btn--primary btn--full">Confirmar Agendamento</button>
+          <button type="submit" class="btn btn--primary btn--full">Quero agendar minha avaliação</button>
           <p class="form__feedback" id="formFeedback" aria-live="polite"></p>
         </form>
       </div>
