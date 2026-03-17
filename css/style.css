@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #1b2430;
@@ -54,6 +58,12 @@ a {
   align-items: center;
   gap: 0.75rem;
   color: #fdfdfd;
+}
+
+.logo__image {
+  height: 52px;
+  width: auto;
+  display: block;
 }
 
 .logo__icon {
@@ -340,27 +350,27 @@ a {
 }
 
 .gallery__photo--2-before {
-  background-image: url("../assets/antes.png");
+  background-image: url("../assets/antes2.png");
 }
 
 .gallery__photo--2-after {
-  background-image: url("../assets/depois.png");
+  background-image: url("../assets/depois2.png");
 }
 
 .gallery__photo--3-before {
-  background-image: url("../assets/antes.png");
+  background-image: url("../assets/antes3.png");
 }
 
 .gallery__photo--3-after {
-  background-image: url("../assets/depois.png");
+  background-image: url("../assets/depois3.png");
 }
 
 .gallery__photo--4-before {
-  background-image: url("../assets/antes.png");
+  background-image: url("../assets/antes4.png");
 }
 
 .gallery__photo--4-after {
-  background-image: url("../assets/depois.png");
+  background-image: url("../assets/depois4.png");
 }
 
 .gallery__caption {
@@ -610,6 +620,75 @@ a {
   color: #00ffa3;
 }
 
+.whatsapp-float {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.2rem;
+  border-radius: 999px;
+  background: #22c55e;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 18px 40px rgba(34, 197, 94, 0.55);
+  z-index: 50;
+  font-size: 0.9rem;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 60px rgba(34, 197, 94, 0.7);
+  background: #16a34a;
+}
+
+.whatsapp-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.whatsapp-card__title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.1;
+}
+
+.whatsapp-card__subtitle {
+  font-size: 0.78rem;
+  opacity: 0.9;
+}
+
+.whatsapp-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #22c55e;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 640px) {
+  .whatsapp-float {
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .whatsapp-card__title {
+    font-size: 0.85rem;
+  }
+
+  .whatsapp-card__subtitle {
+    display: none;
+  }
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -645,6 +724,7 @@ a {
   inset: -40%;
   background: radial-gradient(circle at 0 0, rgba(0, 224, 255, 0.16), transparent 55%);
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.18s ease;
 }
 
