@@ -206,6 +206,10 @@ a {
   margin-bottom: 1.6rem;
 }
 
+.hero__actions .btn {
+  white-space: nowrap;
+}
+
 .hero__info {
   display: flex;
   flex-wrap: wrap;
@@ -228,9 +232,9 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 1.6rem;
+  padding: 0.65rem 1.4rem;
   border-radius: 999px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.12em;
